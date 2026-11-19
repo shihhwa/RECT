@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>釣魚郵件演練｜資訊服務團隊</title>
+<style>
+:root { color-scheme: dark; --bg:#0e141f; --panel:#172131; --line:#324258; --ink:#f2f6fc; --muted:#bbc8da; --alert:#ff987f; --reveal:#a9ead0; }
+* { box-sizing:border-box }
+body { margin:0; background:radial-gradient(ellipse at 12% 1%, #25324b 0%, transparent 48%), var(--bg); color:var(--ink); font:1rem/1.65 "Segoe UI","Microsoft JhengHei",system-ui,sans-serif }
+main { width:min(64rem, 100% - 2rem); margin:auto; padding:2.2rem 0 3rem }
+header { display:flex; align-items:center; gap:.75rem; margin-bottom:1.35rem; color:var(--muted); font-weight:650 }
+header b { display:grid; place-items:center; width:2.1rem; height:2.1rem; border:1px solid #647a98; border-radius:.6rem; color:var(--ink) }
+.hero { padding:clamp(1.35rem,5vw,3.2rem); border:1px solid #594748; border-top:4px solid var(--alert); border-radius:1rem; background:linear-gradient(110deg,#292229,#192233 70%); box-shadow:0 12px 40px #0003 }
+.hero small { color:var(--alert); font-size:.95rem; font-weight:720; letter-spacing:.08em }
+h1 { font-size:clamp(2rem,7vw,4.3rem); line-height:1.12; letter-spacing:-.035em; margin:.35rem 0 1rem; overflow-wrap:anywhere }
+.hero p { max-width:46rem; margin:.8rem 0 0 }
+.reveal { color:var(--reveal); font-weight:700 }
+.muted { color:var(--muted) }
+.scenario { margin-top:.7rem }
+#malware { display:none }
+#malware:target { display:block }
+#malware:target + .hero { display:none }
+.grid { display:grid; grid-template-columns: minmax(0,1.2fr) minmax(0,1fr); gap:1rem; margin-top:1rem }
+.card { border:1px solid var(--line); background:var(--panel); padding:1.4rem; border-radius:1rem }
+h2 { font-size:1.3rem; margin:0 0 .75rem }
+ol { margin:0; padding-left:1.3rem }
+li { padding-left:.25rem; margin:.5rem 0; color:var(--muted) }
+li strong { display:block; color:var(--ink) }
+details { border-top:1px solid var(--line); margin-top:.65rem; }
+summary { cursor:pointer; padding:.7rem 0; color:var(--ink); font-weight:650 }
+details p { margin:0 0 .75rem; color:var(--muted) }
+summary:hover { color:var(--reveal) }
+summary:focus-visible { outline:2px solid var(--reveal); outline-offset:3px; border-radius:.2rem }
+footer { color:var(--muted); margin:1rem 0 0; font-size:.92rem }
+@media (max-width: 43rem) { .grid { grid-template-columns:1fr } main { padding-top:1rem } }
+</style>
+</head>
+<body>
+<main>
+  <header><b aria-hidden="true">!</b> 資訊服務團隊</header>
+  <section class="hero" id="malware" aria-labelledby="malware-title">
+    <small>資安演練 · 情境模擬</small>
+    <h1 id="malware-title">你的電腦已中毒！</h1>
+    <p class="reveal">這是公司釣魚郵件演練。這個頁面沒有在你的裝置安裝任何程式。</p>
+    <p class="muted scenario">在真實的攻擊中，類似頁面可能用感染警告催促你下載檔案或安裝程式。遇到這類警示，先關閉頁面，透過平常使用的資訊服務窗口查證。</p>
+  </section>
+  <section class="hero" aria-labelledby="data-title">
+    <small>資安演練 · 情境模擬</small>
+    <h1 id="data-title">你的資料已被盜取！</h1>
+    <p class="reveal">這是公司釣魚郵件演練。這個頁面沒有要求登入，也沒有讀取你的帳號或檔案。</p>
+    <p class="muted scenario">在真實的攻擊中，分享文件的連結可能將你帶到仿冒登入頁，誘導你輸入帳號、密碼或驗證碼。</p>
+  </section>
+  <div class="grid">
+    <section class="card" aria-labelledby="steps-title">
+      <h2 id="steps-title">下次收到可疑郵件時</h2>
+      <ol>
+        <li><strong>先暫停操作</strong>不要登入、輸入驗證碼或下載檔案。</li>
+        <li><strong>用熟悉的管道查證</strong>比對完整寄件地址與連結網域，再透過公司通訊錄或原有對話確認。</li>
+        <li><strong>回報原始郵件</strong>使用郵件系統的釣魚回報功能，或聯絡平常使用的資訊服務窗口。</li>
+      </ol>
+    </section>
+    <section class="card" aria-labelledby="quiz-title">
+      <h2 id="quiz-title">快速練習</h2>
+      <p class="muted">收到一封未預期的共用文件通知，你會先做什麼？展開選項看解析。</p>
+      <details><summary>從既有管道向寄件者查證</summary><p>正確。從公司通訊錄或既有對話聯繫對方，可以獨立確認對方是否真的寄出通知。</p></details>
+      <details><summary>用公司帳密登入後查看文件</summary><p>先停一下。請先確認發信人與網址。公司帳密只應用於你已確認的公司服務。</p></details>
+    </section>
+  </div>
+  <footer>若你在其他可疑網站已輸入資料或執行檔案，請立即聯絡資訊服務窗口，並說明時間與已做的操作。</footer>
+</main>
+</body>
+</html>
