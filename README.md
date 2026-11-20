@@ -73,3 +73,7 @@
 ## 參考資料
 
 - [CISA｜Secure Our World：辨識與通報釣魚郵件](https://www.cisa.gov/sites/default/files/2024-09/Secure-Our-World-Phishing-Tip-Sheet.pdf)
+
+- [中央社｜金管會：網銀盜轉獲報 5 件，初查非銀行遭駭（2026-11-19）](https://www.cna.com.tw/news/afe/202611190359.aspx)
+- [公視新聞｜用戶網銀存款遭盜轉（2026-11-19）](https://news.pts.org.tw/article/836507)
+- [銀行公會｜簡訊詐騙防範提醒](https://www.ba.org.tw/FileDownload/Download?FileId=27056d4b-37b4-4e7e-97a1-8c647ed9eee9)

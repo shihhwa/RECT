@@ -36,6 +36,10 @@ summary:hover { color:var(--reveal) }
 summary:focus-visible { outline:2px solid var(--reveal); outline-offset:3px; border-radius:.2rem }
 footer { color:var(--muted); margin:1rem 0 0; font-size:.92rem }
 @media (max-width: 43rem) { .grid { grid-template-columns:1fr } main { padding-top:1rem } }
+.bank-alert { margin-top:1rem; border-left:4px solid var(--alert) }
+.bank-alert p { margin:.6rem 0 }
+.bank-alert ul { margin:.75rem 0; padding-left:1.25rem }
+.bank-alert .source { font-size:.9rem; margin-bottom:0 }
 </style>
 </head>
 <body>
@@ -52,6 +56,16 @@ footer { color:var(--muted); margin:1rem 0 0; font-size:.92rem }
     <h1 id="data-title">你的資料已被盜取！</h1>
     <p class="reveal">這是公司釣魚郵件演練。這個頁面沒有要求登入，也沒有讀取你的帳號或檔案。</p>
     <p class="muted scenario">在真實的攻擊中，分享文件的連結可能將你帶到仿冒登入頁，誘導你輸入帳號、密碼或驗證碼。</p>
+  </section>
+  <section class="card bank-alert" aria-labelledby="bank-alert-title">
+    <h2 id="bank-alert-title">近期資安提醒｜手機不明連結與網銀盜轉</h2>
+    <p>2026 年 11 月 19 日，金管會表示已收到 4 家銀行通報，共有 5 名客戶反映網銀帳戶遭非本人轉帳。警方仍在調查是否涉及手機遭惡意程式入侵。</p>
+    <p class="muted">不明連結可能導向假銀行頁面，誘導你輸入帳密、簡訊驗證碼，或安裝來源不明的 App。</p>
+    <ul>
+      <li><strong>收到陌生簡訊、LINE 訊息或郵件</strong>先別點連結、下載檔案或安裝 App。要查銀行通知，請直接開啟平常使用的銀行 App，或撥打卡片背面的客服電話。</li>
+      <li><strong>已輸入網銀資料、安裝可疑 App，或發現不明交易</strong>請改用可信裝置或另一支電話，立即聯絡銀行客服，並可撥打 165 反詐騙諮詢專線。</li>
+    </ul>
+    <p class="source muted">案例來源：中央社、公視新聞（2026 年 11 月 19 日）。</p>
   </section>
   <div class="grid">
     <section class="card" aria-labelledby="steps-title">
